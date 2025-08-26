@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #000604;
+    padding: 8px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-tag{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    gap: 50px;
+    background-color: #000604;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color: #2B2725;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.search-bar input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+.brand-name{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.brand-name h3{
+    color: white;
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.user-icon{
+    display: flex;
+    align-items: center;
+    background-color: #281A13;
+    margin-left: 30px;
+    border-radius: 64px;
+    padding-block: 5px;
+}
+.user-icon span{
+    color: white;
+    font-size: 32px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-inline: 20px;
+}
+.nav{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000604;
+    padding-bottom: 8px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #140D09;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-inline: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-links a:hover{
+    background-color: #281A13;
+    color: silver;
+    text-decoration: underline;
+}
+.hero{
+    background-image: url('Assets\\Hero img.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero-text h1{
+    font-family: Poppins;
+    letter-spacing: 1px;
+    color: silver;   /* base text color */
+      text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5),   /* subtle shadow for depth */
+        0 0 10px rgba(255, 255, 255, 0.7), /* glow effect */
+        0 0 20px rgba(255, 255, 255, 0); /* additional glow for intensity */
+    font-size: 64px;
+    text-align: center;
+    padding-top: 60px;
+    font-weight: 600;
+}
+.hero-text p{
+    color: #757575;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 300;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.explore-btn{
+    background: linear-gradient(145deg, #c0c0c0, #e6e6e6); /* silver gradient */
+      color: #111;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 
+        0 4px 8px rgba(255,255,255,0.3), 
+        0 6px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+}
+.explore-btn:hover{
+    background: linear-gradient(145deg, #e6e6e6, #c0c0c0); /* reverse gradient on hover */
+      box-shadow: 
+        0 6px 12px rgba(255,255,255,0.5), 
+        0 8px 24px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+}
+.explore-btn:active{
+    box-shadow: 
+        0 2px 4px rgba(255,255,255,0.2), 
+        0 2px 8px rgba(0,0,0,0.2);
+      transform: translateY(0);
+}
+.parts{
+    padding: 50px 0px;
+    background: #000604;
+
+}
+.parts h1{
+    color: white;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.part-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #000604;
+}
+.part {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid transparent;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+.part:hover {
+  border: 2px solid silver;
+  box-shadow: 0 4px 15px rgba(192, 192, 192, 0.5);
+}
+
+.part img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.part h2 {
+    font-family: inter;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 15px;
+  border-radius: 10px;
+}
+.part h2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.part:hover h2::after {
+  opacity: 1;
+}
+.part:hover {
+  transform: scale(1.03); /* slight zoom */
+}
+.part p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:silver;
+  font-size: 16px;
+  padding: 0 10px;
+  text-align: center;
+  transition: all 0.4s ease;
+    opacity: 0;
+}
+.part:hover p {
+  bottom: 20px;
+    display: block;
+    opacity: 1;
+}
+.legacy-texts{
+    padding: 50px 20px;
+    background: #000604;
+    text-align: center;
+    color: white;
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+}
+.legacy-text{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 150px;
+}
+.legacy-texts p{
+    font-family: inter;
+    -webkit-text-fill-color: burlywood;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    flex: 2;
+    margin-right: 20px;
+}
+.legacy-texts h1{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    flex: 1;
+}
+.jouney-bar{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.journey-bar h3{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+.journey-btn{
+    background: linear-gradient(145deg, #c0c0c0, #e6e6e6); /* silver gradient */
+      color: #111;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 
+        0 4px 8px rgba(255,255,255,0.3), 
+        0 6px 20px rgba(0,0,0,0.8);
+      transition: all 0.3s ease-in-out;
+}
+.signature-models{
+    background: #000604;
+    padding: 50px 20px;
+    text-align: center;
+    overflow-x: hidden;
+}
+.signature-models h1{
+    font-family: inter;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    color: white;
+}
+.model-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: #000604;
+}
+.model{
+    flex: 1;
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: inline-block;
+}
+.model img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    padding-inline-start: 10px;
+}
+.model img:hover{
+    transform: scale(1.05);
+}
+.model h2{
+    font-family: inter;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+.model p{
+    font-family: inter;
+    color: silver;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-align: center;
+}
+footer{
+    background-color: #000604;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer .footer-content p{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 300;
+}
+footer .social-icons{
+    display: flex;
+    gap: 15px;
+}
+footer .social-icons a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+footer .social-icons a:hover{
+    color: silver;
+}
+.icon{
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+.newsletter h2{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.newsletter h3{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.newsletter-bar{
+    display: flex;
+    gap: 10px;
+}
+.newsletter-bar input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+}
+.newsletter-bar button{
+    background: linear-gradient(145deg, #c0c0c0, #e6e6e6); /* silver gradient */
+      color: #111;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 
+        0 4px 8px rgba(255,255,255,0.3), 
+        0 6px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+}
+.newsletter-bar button:hover{
+    background: linear-gradient(145deg, #e6e6e6, #c0c0c0); /* reverse gradient on hover */
+      box-shadow: 
+        0 6px 12px rgba(255,255,255,0.5), 
+        0 8px 24px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+}
+.newsletter-bar button:active{
+    box-shadow: 
+        0 2px 4px rgba(255,255,255,0.2), 
+        0 2px 8px rgba(0,0,0,0.2);
+      transform: translateY(0);
+}
+
